@@ -1,0 +1,119 @@
+!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Add Car Page</title>
+        <link rel="stylesheet" href="../../style/sign/sign.css">
+    </head>
+
+    
+    <body>
+        <section class="intro">
+            <img class="logo" src="" alt="our logo">
+            <h1>Easy & fast<br>continous tracking</h1>
+            <img id="illust" src="" alt="intro-img">
+        </section>
+    
+    
+        <section class="form">
+    
+    
+    
+            <div id="title">
+                <img class="logo" src="" alt="our logo">
+                <h1>Easy & fast<br>continous tracking</h1>
+            </div>
+        
+    
+        
+            <div class="card">
+            
+            
+    
+    
+                <div class="forms">
+                    <div id="formSignUp">
+    
+    
+    
+                        <ul class="profil">
+                            <li>
+                                <label for="Marque" required>Marque</label><br>
+                                <input type="carMarque" type="text" oninput="Update(this.value , 'marque')";>
+                           </li>
+        
+                            <li>
+                                <label for="Modele" required>Modele</label><br>
+                                <input type="carModele" type="text" oninput="Update(this.value , 'modele')"; >
+                           </li>
+
+                           <li>
+                            <label for="Matricule" required>Matricule</label><br>
+                            <input type="carMatricule" type="text" oninput="Update(this.value , 'matricule')"; >
+                       </li>
+                       </ul>
+    
+        
+                        
+                        <label for="PhoneNumber">Phone Number</label><br>
+                        <input type="carPhoneNumber" type="tel" oninput="Update(this.value , 'carPhone')"; >
+        
+        
+    
+                        <label for="Password">Password</label><br>
+                        <div class="psw">
+                            <input type="carPassword1" type="password"  oninput="Update(this.value , 'carPass1')"; >
+                        </div>
+                        <label for="carConfirmPassword">Confirm password</label><br>
+                        <div class="psw">
+                            <input type="carPassword2" type="password" oninput="Update(this.value , 'carPass2')";>
+                        </div>
+                    
+    
+                    
+                        <div class="controle-errors">
+                            <p>Seems good, we suggest to make it stonger!</p>
+                            <ul>
+                                <li class="done">Contains at least 2 uppercase</li>
+                                <li class="done">Contains at least 2 digets</li>
+                                <li>Contains at least 2 special characters</li>
+                            </ul>
+                        </div>
+    
+    
+    
+                        <input type="submit" value="let's go" id="add_car_btn" class="submit">
+    
+    
+    
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script >
+
+            
+
+        </script>
+
+        <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-app.js"></script>
+
+        <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-analytics.js"></script>
+
+        <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-firestore.js"></script>
+        
+        <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-auth.js"></script>
+        
+        <script src="config.js"></script>
+
+        <script src="variable.js"></script>
+         
+        <script src="update.js"></script>
+
+        <script src="car_add.js"></script>
+
+
+    </body>
+
+</html>
